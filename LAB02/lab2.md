@@ -1,4 +1,4 @@
-Function 1 Analysis
+## Function 1 Analysis
 
 The provided function calculates the sum of squares of numbers up to a given number. Let's analyze its time and space complexity.
 
@@ -11,7 +11,7 @@ Space Complexity: O(1)
 The function uses a constant amount of space regardless of the input number. The space complexity is not dependent on the size of the input.
 In summary, Function 1 has a linear time complexity and constant space complexity. It efficiently calculates the sum of squares using a straightforward loop.
 
-Function 2 Analysis
+## Function 2 Analysis
 
 The given function calculates the sum of the cubes of numbers up to a given number using a mathematical formula. Let's analyze its time and space complexity.
 
@@ -24,7 +24,7 @@ Space Complexity: O(1)
 The function uses a constant amount of space, as it does not rely on any data structures or variables that scale with the input number.
 In summary, Function 2 has constant time and space complexity. It efficiently calculates the sum of cubes using a direct formula, making it particularly efficient for large values of number.
 
-Function 3 Analysis
+## Function 3 Analysis
 
 The provided function implements the Bubble Sort algorithm to sort a list. Let's analyze its time and space complexity.
 
@@ -38,7 +38,7 @@ The function performs in-place sorting, meaning it sorts the list without using 
 In summary, Function 3 has a time complexity of O(n^2) and constant space complexity. Bubble Sort is known for its simplicity but is less efficient than more advanced sorting algorithms for large datasets.
 
 
-Function 4 Analysis
+## Function 4 Analysis
 
 The given function calculates the factorial of a given number using a loop. Let's analyze its time and space complexity.
 
