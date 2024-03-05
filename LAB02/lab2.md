@@ -1,31 +1,37 @@
 Function 1 Analysis
+
 The provided function calculates the sum of squares of numbers up to a given number. Let's analyze its time and space complexity.
 
 Time Complexity: O(n)
 
 The function uses a loop that iterates from 1 to number, performing a constant amount of work for each iteration. As a result, the time complexity is linear, proportional to the value of number.
+
 Space Complexity: O(1)
 
 The function uses a constant amount of space regardless of the input number. The space complexity is not dependent on the size of the input.
 In summary, Function 1 has a linear time complexity and constant space complexity. It efficiently calculates the sum of squares using a straightforward loop.
 
 Function 2 Analysis
+
 The given function calculates the sum of the cubes of numbers up to a given number using a mathematical formula. Let's analyze its time and space complexity.
 
 Time Complexity: O(1)
 
 The function computes the result using a mathematical formula, which requires a constant number of arithmetic operations. The time complexity is constant, irrespective of the input number.
+
 Space Complexity: O(1)
 
 The function uses a constant amount of space, as it does not rely on any data structures or variables that scale with the input number.
 In summary, Function 2 has constant time and space complexity. It efficiently calculates the sum of cubes using a direct formula, making it particularly efficient for large values of number.
 
 Function 3 Analysis
+
 The provided function implements the Bubble Sort algorithm to sort a list. Let's analyze its time and space complexity.
 
 Time Complexity: O(n^2)
 
 The function contains nested loops. The outer loop runs for n-1 iterations, and the inner loop runs for n-1-i iterations, where n is the length of the list. The nested loops result in a time complexity of O(n^2) in the worst case.
+
 Space Complexity: O(1)
 
 The function performs in-place sorting, meaning it sorts the list without using additional memory proportional to the input size. The space complexity is constant, as it only uses a constant amount of extra space for temporary variables.
@@ -33,11 +39,13 @@ In summary, Function 3 has a time complexity of O(n^2) and constant space comple
 
 
 Function 4 Analysis
+
 The given function calculates the factorial of a given number using a loop. Let's analyze its time and space complexity.
 
 Time Complexity: O(n)
 
 The loop iterates from 1 to number, performing a constant amount of work for each iteration. The time complexity is linear, proportional to the value of number.
+
 Space Complexity: O(1)
 
 The function uses a constant amount of space, as it only requires variables (total and i) that do not scale with the input number.
