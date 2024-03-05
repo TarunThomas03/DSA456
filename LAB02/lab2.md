@@ -9,7 +9,7 @@ The function uses a loop that iterates from 1 to number, performing a constant a
 Space Complexity: O(1)
 
 The function uses a constant amount of space regardless of the input number. The space complexity is not dependent on the size of the input.
-In summary, Function 1 has a linear time complexity and constant space complexity. It efficiently calculates the sum of squares using a straightforward loop.
+In summary, Function 1 has a time complexity of O(n) and constant space complexity. Function 1 has a linear time complexity and constant space complexity. It efficiently calculates the sum of squares using a straightforward loop.
 
 ## Function 2 Analysis
 
