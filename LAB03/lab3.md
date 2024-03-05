@@ -44,6 +44,23 @@ def linear_search(lst, key, index=0):
         return -1                 # 1  
 ```
 
+1. Base Case:
+If index is less than the length of the list, one operation is performed (checking inequality).
+2. Recursive Case:
+If the base case is not met, the function checks for the equality of the current list element with the key.
+Three operations are performed in the recursive case:
+One equality check (lst[index] == key)
+One recursive call (linear_search(lst, key, index + 1))
+3. Time Complexity:
+The time complexity is O(n), where n is the length of the list. In the worst case, the function may need to search through the entire list.
+4. Number of Operations (Recurrence Relation):
+Express the number of operations as a recurrence relation:
+T(n) = 3 + T(n-1)
+Continue until T(n) = 3n + T(0), where T(0) is a constant.
+5. Total Number of Operations:
+The sum of the arithmetic series is 3n. Each recursive call adds 3 operations.
+
+
 # Part C
 
 1. Writing recursive functions requires breaking down problems into manageable subproblems. The initial step involves identifying a base case, outlining conditions for terminating the recursion. Subsequently, the recursive case is defined to express the problem in smaller instances, invoking the function iteratively towards the base case. Crucially, each recursive call must bring the problem closer to resolution, preventing infinite recursion. Special cases are considered, ensuring the function's correctness across all possible inputs. Incremental testing with varying input sizes validates the function's reliability and efficiency, ensuring its effectiveness in solving complex problems.
