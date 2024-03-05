@@ -2,14 +2,17 @@
 
 ## Function 1
 
+```python
 def factorial(number):
     if number == 0:              # 1
         return 1                 # 1
     else:
         return number * factorial(number - 1)  # 3 (1 multiplication and 2 additions) + ops done by factorial(number - 1) 
+```
 
 ## Function 2
 
+```python
 def linear_search(lst, key, index=0):
     if index < len(lst):          # 1
         if lst[index] == key:     # 1
@@ -19,7 +22,7 @@ def linear_search(lst, key, index=0):
                                   # 1 (recursive call)
     else:
         return -1                 # 1  
-
+```
 
 # Part C
 
