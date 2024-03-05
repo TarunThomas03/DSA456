@@ -10,6 +10,26 @@ def factorial(number):
         return number * factorial(number - 1)  # 3 (1 multiplication and 2 additions) + ops done by factorial(number - 1) 
 ```
 
+1. Base Case:
+If number is 0, one operation is performed (checking equality).
+2. Recursive Case:
+In the else block, three operations are performed:
+One multiplication (number * ...)
+Two additions (number - 1 and the result of factorial(number - 1))
+3. Time Complexity:
+The time complexity is O(n), where n is the input number. Each recursive call contributes a constant number of operations.
+4. Number of Operations (Recurrence Relation):
+Express the number of operations as a recurrence relation:
+T(n)=3+T(n−1)
+T(n)=6+T(n−2)
+Continue until 
+T(n)=3n+T(0), where T(0) is a constant.
+5. Total Number of Operations:
+The sum of the arithmetic series is 3n. Each recursive call adds 3 operations.
+Conclusion:
+The function's time complexity is O(n).
+The total number of operations for a given input n is 3n.
+
 ## Function 2
 
 ```python
