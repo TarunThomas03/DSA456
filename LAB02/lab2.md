@@ -65,7 +65,7 @@ In summary, Function 4 has a time complexity of O(n) and constant space complexi
 
 | Team member | Timing for fibonacci | Timing for sum_to_number | 
 
-|---|---|---|
+|-------------|----------------------|--------------------------|
 
 | Tarun Thomas | 7.24 | 6.28 |
 
