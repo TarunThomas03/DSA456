@@ -50,3 +50,26 @@ Space Complexity: O(1)
 
 The function uses a constant amount of space, as it only requires variables (total and i) that do not scale with the input number.
 In summary, Function 4 has a time complexity of O(n) and constant space complexity. It efficiently calculates the factorial using a straightforward loop, making it a reasonable choice for small to moderate values of number.
+
+
+## Part C In-Lab Discussion:
+
+
+* Name 
+
+* Tarun Thomas
+
+
+### Timing Data
+
+
+| Team member | Timing for fibonacci | Timing for sum_to_number | 
+
+|---|---|---|
+
+| Tarun Thomas | 7.24 | 6.28 |
+
+
+## Reflection
+
+The Fibonacci function efficiently computes Fibonacci numbers with constant space complexity. It utilizes two variables, a and b, to iteratively generate the sequence without requiring additional memory proportional to the input size. As the loop progresses, only these two variables are used, resulting in a space complexity of O(1), indicating constant space usage. Similarly, the sum_to_goal function, designed to find a pair of numbers in a list that sum to a specified goal, also maintains a constant space complexity. The loop variables i and j within the function contribute to O(1) space complexity, as they do not introduce any dependency on the input size.
