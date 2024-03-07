@@ -1,3 +1,8 @@
+#
+# Author: Tarun Thomas
+# Student Number: 113605224
+#
+
 import random
 import time
 import matplotlib.pyplot as plt
