@@ -38,3 +38,15 @@ As the sorting time decreases even when the number of comparisons and moves incr
 
 12. *What does the speaker mean by "not mixing hot and cold code"?*
    The concept of "not mixing hot and cold code" differentiates between "hot" code, which is executed frequently or is performance-critical, and "cold" code, which is less frequently executed or not as critical to performance. By not mixing them, the speaker emphasizes the idea of organizing or structuring code in a way that separates performance-critical sections from less critical ones. This separation can help improve cache efficiency and optimize CPU usage by ensuring that the most frequently accessed code (hot) is readily available and not cluttered with less important code paths (cold), potentially enhancing overall performance.
+
+
+Part B:
+
+1. *What did you/your team find most challenging to understand in the video?*
+   One challenging aspect might have been grasping the intricacies of branch prediction and the impact of certain optimizations on CPU performance. Understanding how different sorting algorithms interact with hardware-level features like branch prediction and informational entropy can be complex, especially for those without a deep background in computer architecture.
+
+ 2. *What is the most surprising thing you learned that you did not know before?* 
+    The most surprising revelation could be the counterintuitive relationship between increased comparisons and moves, yet decreased sorting time. Realizing that there's a missing metric related to CPU utilization or cache performance that explains this phenomenon might have been unexpected. It challenges the conventional understanding of algorithm efficiency, emphasizing the importance of aligning code with hardware capabilities. 
+ 
+ 3. *Has the video given you ideas on how you can write better/faster code? If yes, explain what you plan to change when writing code in the future. If not, explain why not.*  Yes, the video provides valuable insights into writing better and faster code. The emphasis on "fast code is left-leaning" and avoiding the mixing of hot and cold code has inspired a more focused approach to optimization. In the future, one might prioritize optimizing critical sections of code, leverage vectorization for parallel processing, and be mindful of the cost of abstraction. Additionally, the advice to trust the compiler encourages confidence in relying on its optimization capabilities, freeing up mental space to focus on writing clear and maintainable code. Overall, the video promotes a pragmatic and hardware-aware approach to coding for improved performance.
+
