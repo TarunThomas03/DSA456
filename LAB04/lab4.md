@@ -1,6 +1,6 @@
-Team Members: Jubril Olawale Akolade, Tarun Thomas
+## Team Members: Jubril Olawale Akolade, Tarun Thomas
 
-Part A:
+# Part A:
 
 1. *What sorting algorithm was the speaker trying to improve?*
    The speaker, Andrei Alexandrescu, was focused on improving the performance of *Quicksort* by investigating alternative methods for sorting small arrays. This exploration is part of a broader effort to optimize sorting algorithms by adjusting strategies based on the size of the data set.
@@ -40,7 +40,7 @@ As the sorting time decreases even when the number of comparisons and moves incr
    The concept of "not mixing hot and cold code" differentiates between "hot" code, which is executed frequently or is performance-critical, and "cold" code, which is less frequently executed or not as critical to performance. By not mixing them, the speaker emphasizes the idea of organizing or structuring code in a way that separates performance-critical sections from less critical ones. This separation can help improve cache efficiency and optimize CPU usage by ensuring that the most frequently accessed code (hot) is readily available and not cluttered with less important code paths (cold), potentially enhancing overall performance.
 
 
-Part B:
+# Part B:
 
 1. *What did you/your team find most challenging to understand in the video?*
    One challenging aspect might have been grasping the intricacies of branch prediction and the impact of certain optimizations on CPU performance. Understanding how different sorting algorithms interact with hardware-level features like branch prediction and informational entropy can be complex, especially for those without a deep background in computer architecture.
