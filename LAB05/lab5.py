@@ -1,4 +1,4 @@
-from typing import Any, List, Optional
+from typing import Any, Optional, List
 
 class Node:
     def __init__(self, data, next_node=None):
@@ -13,7 +13,7 @@ class SinglyLinkedList:
         return self.head is None
 
     def prepend(self, data: Any):
-        new_node = Node(data, self.head)
+        new_node = Node(data, next_node=self.head)
         self.head = new_node
 
     def append(self, data: Any):
@@ -29,21 +29,26 @@ class SinglyLinkedList:
     def insert_after(self, target: Node, data: Any):
         if target is None:
             return
-        new_node = Node(data, target.next)
+
+        new_node = Node(data, next_node=target.next)
         target.next = new_node
 
     def delete(self, target: Node) -> bool:
-        if not self.head or not target:
+        if not self.head or target is None:
             return False
+
         if self.head == target:
             self.head = target.next
             return True
+
         current = self.head
         while current.next and current.next != target:
             current = current.next
-        if current.next:
+
+        if current.next == target:
             current.next = target.next
             return True
+
         return False
 
     def search(self, data: Any) -> Optional[Node]:
@@ -76,3 +81,23 @@ class SinglyLinkedList:
             print(current.data, end=" -> ")
             current = current.next
         print("None")
+
+# Example Usage:
+linked_list = SinglyLinkedList()
+print(linked_list.is_empty())  # Output: True
+
+linked_list.prepend(1)
+linked_list.prepend(2)
+linked_list.append(3)
+linked_list.print()  # Output: 2 -> 1 -> 3 -> None
+
+node_1 = linked_list.search(1)
+linked_list.insert_after(node_1, 4)
+linked_list.print()  # Output: 2 -> 1 -> 4 -> 3 -> None
+
+node_2 = linked_list.search(2)
+linked_list.delete(node_2)
+linked_list.print()  # Output: 1 -> 4 -> 3 -> None
+
+print(linked_list.size())  # Output: 3
+print(linked_list.to_list())  # Output: [1, 4, 3]
