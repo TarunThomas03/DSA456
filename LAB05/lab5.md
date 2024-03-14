@@ -2,6 +2,7 @@
 
 ### For the big-O analysis:
 
+__init__(self): o(1)
 is_empty(self): O(1)
 prepend(self, data): O(1)    
 append(self, data): O(n) - When appending, we traverse the list to find the last node.    
@@ -15,7 +16,7 @@ print(self): O(n) - We need to traverse the entire list to print all the element
 
 
 
-Initialization (__init__):    
+#### Initialization (__init__):    
      
 Time Complexity: O(1)     
 Explanation: Initializing an empty linked list involves setting up the initial state, which typically entails only setting the head pointer to None. This operation has a constant time complexity since it does not depend on the size of the list.     
