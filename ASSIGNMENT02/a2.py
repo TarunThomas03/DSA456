@@ -8,7 +8,6 @@ class SortedLinkedList:
         self.head = None
         self.size = 0
 
-
     def insert(self, data):
         new_node = Node(data)
         if self.head is None or data <= self.head.data:
