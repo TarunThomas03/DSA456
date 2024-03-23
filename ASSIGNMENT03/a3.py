@@ -17,7 +17,7 @@ class ChainingTable:
         current = self.table[index]
         while current.next:
             if current.key == key:
-                return False  # Key already exists
+                return False  
             current = current.next
         current.next = self.Record(key, value)
         return True
@@ -30,7 +30,7 @@ class ChainingTable:
                 current.value = value
                 return True
             current = current.next
-        return False  # Key not found
+        return False  
 
     def remove(self, key):
         index = hash(key) % self.capacity
@@ -45,7 +45,7 @@ class ChainingTable:
                 return True
             prev = current
             current = current.next
-        return False  # Key not found
+        return False 
 
     def search(self, key):
         index = hash(key) % self.capacity
@@ -54,7 +54,7 @@ class ChainingTable:
             if current.key == key:
                 return current.value
             current = current.next
-        return None  # Key not found
+        return None  
 
     def capacity(self):
         return self.capacity
