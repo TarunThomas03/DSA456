@@ -18,7 +18,7 @@ def dijkstra(graph, start, target):
 
         for neighbor, weight in graph[current_node].items():
             distance = current_distance + weight
-            if distance < distances[neighbor]:
+            if distance < distances[neighbor]:   
                 distances[neighbor] = distance
                 previous[neighbor] = current_node
                 heapq.heappush(unvisited, (distance, neighbor))

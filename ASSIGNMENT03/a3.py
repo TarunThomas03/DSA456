@@ -7,7 +7,7 @@ class ChainingTable:
 
     def __init__(self, capacity=32):
         self.capacity = capacity
-        self.table = [None] * capacity
+        self.table = [None] * capacity  
 
     def insert(self, key, value):
         index = hash(key) % self.capacity
